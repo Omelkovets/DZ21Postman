@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "c1747e4e-982a-4027-b253-1ca4b4a19244",
+		"name": "DZ21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32887720"
+	},
+	"item": [
+		{
+			"name": "Перший запит",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John\",\n    \"lastName\": \"Dou\",\n    \"email\": \"katerina.omelkovets5@gmail.com\",\n    \"password\": \"Qwerty12345\",\n    \"repeatPassword\": \"Qwerty12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto2.forstudy.space/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"qauto2",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Другий запит",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"katerina.omelkovets5@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto2.forstudy.space/api/auth/resetPassword",
+					"protocol": "https",
+					"host": [
+						"qauto2",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"auth",
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Третій запит",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"photo\": \"user-1621352948859.jpg\",\n  \"name\": \"John\",\n  \"lastName\": \"Dou\",\n  \"dateBirth\": \"2021-03-17T15:21:05.000Z\",\n  \"country\": \"Ukraine\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto2.forstudy.space/api/users/profile",
+					"protocol": "https",
+					"host": [
+						"qauto2",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Четвертий запит",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"carBrandId\": 1,\n  \"carModelId\": 1,\n  \"mileage\": 122\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto2.forstudy.space/api/cars",
+					"protocol": "https",
+					"host": [
+						"qauto2",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Пʼятий запит",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"status\": \"ok\",\n  \"data\": [\n    {\n      \"id\": 54,\n      \"carId\": 94,\n      \"reportedAt\": \"2021-05-17\",\n      \"mileage\": 111,\n      \"liters\": 11,\n      \"totalCost\": 11\n    },\n    {\n      \"id\": 55,\n      \"carId\": 94,\n      \"reportedAt\": \"2021-06-17\",\n      \"mileage\": 222,\n      \"liters\": 11,\n      \"totalCost\": 11\n    }\n  ],\n  \"currentPage\": 1,\n  \"totalItems\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto2.forstudy.space/api/expenses",
+					"protocol": "https",
+					"host": [
+						"qauto2",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
